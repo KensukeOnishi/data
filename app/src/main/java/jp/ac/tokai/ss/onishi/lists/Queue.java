@@ -6,12 +6,13 @@ package jp.ac.tokai.ss.onishi.lists;
 
 public class Queue {
     private int maxsize = 10;
-    private String store[] = new String[maxsize];
+    private String store[];// = new String[maxsize];
     private int front, rear;
 
     public Queue() {
         front = 0; //maxsize-1;
         rear = 0;
+        store = new String[maxsize];
     }
 
     public String offer(String data){
